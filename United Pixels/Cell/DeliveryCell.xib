@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeliveryCell" rowHeight="232" id="KGk-i7-Jjw" customClass="DeliveryCell" customModule="United_Pixels" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="232"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="232"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwI-4Y-0oT">
+                        <rect key="frame" x="20" y="0.0" width="194" height="31.5"/>
+                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                        <color key="textColor" red="0.1764705882" green="0.047058823530000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mw3-Xa-Bfp">
+                        <rect key="frame" x="234" y="-8.5" width="66" height="48.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="FSY-ye-gkK"/>
+                            <constraint firstAttribute="height" constant="48" id="jjl-S1-e00"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                        <state key="normal" title="CHANGED"/>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="OcQ-y9-AQe">
+                        <rect key="frame" x="36" y="72" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="f43-xw-j8o"/>
+                            <constraint firstAttribute="height" constant="24" id="ho3-I0-72z"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0s-C8-XaN">
+                        <rect key="frame" x="85" y="72" width="199" height="113.5"/>
+                        <string key="text">Alexandra Smith
+Cesu 31 k-2 5.st, SIA Chili
+Riga
+LV–1012
+Latvia</string>
+                        <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="16"/>
+                        <color key="textColor" red="0.58431372549019611" green="0.52549019607843139" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="z0s-C8-XaN" secondAttribute="trailing" constant="20" id="0D7-9y-3MM"/>
+                    <constraint firstItem="mw3-Xa-Bfp" firstAttribute="leading" secondItem="TwI-4Y-0oT" secondAttribute="trailing" constant="20" id="1eC-qK-6ji"/>
+                    <constraint firstItem="OcQ-y9-AQe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="59p-BI-gGM"/>
+                    <constraint firstItem="TwI-4Y-0oT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="754-da-Kk6"/>
+                    <constraint firstItem="mw3-Xa-Bfp" firstAttribute="centerY" secondItem="TwI-4Y-0oT" secondAttribute="centerY" id="ONq-ZT-qua"/>
+                    <constraint firstAttribute="trailing" secondItem="mw3-Xa-Bfp" secondAttribute="trailing" constant="20" id="XPa-6c-fXz"/>
+                    <constraint firstItem="mw3-Xa-Bfp" firstAttribute="centerY" secondItem="TwI-4Y-0oT" secondAttribute="centerY" id="bIW-xa-98c"/>
+                    <constraint firstItem="z0s-C8-XaN" firstAttribute="leading" secondItem="OcQ-y9-AQe" secondAttribute="trailing" constant="25" id="d0t-sh-wAy"/>
+                    <constraint firstItem="mw3-Xa-Bfp" firstAttribute="leading" secondItem="TwI-4Y-0oT" secondAttribute="trailing" constant="20" id="eGS-9z-SBQ"/>
+                    <constraint firstItem="z0s-C8-XaN" firstAttribute="top" secondItem="OcQ-y9-AQe" secondAttribute="top" id="pA1-uy-Gmw"/>
+                    <constraint firstItem="OcQ-y9-AQe" firstAttribute="top" secondItem="mw3-Xa-Bfp" secondAttribute="bottom" constant="32" id="u6I-xo-CqD"/>
+                    <constraint firstItem="TwI-4Y-0oT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vhD-0Q-xZM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="changeButton" destination="mw3-Xa-Bfp" id="p2s-Uv-M0T"/>
+            </connections>
+            <point key="canvasLocation" x="214.49275362318843" y="66.964285714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home" width="24" height="24"/>
+    </resources>
+</document>
